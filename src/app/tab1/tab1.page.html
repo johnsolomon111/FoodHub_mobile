@@ -7,24 +7,30 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
+  <ion-card class="ion-padding-bottom">
   <ion-row>
-    <ion-img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y"
+    <ion-img src="https://servoy.com/wp-content/uploads/github-300x300.png"
     ></ion-img>
   </ion-row>
-  <ion-row class="ion-margin-top">
-    <ion-item>
-      <ion-icon slot="start" name="person-circle-outline"></ion-icon>
-      Full Name
-    </ion-item>
-    <ion-item>
-      <ion-icon slot="start" name="search-circle-outline"></ion-icon>
-      @username_
-    </ion-item>
-    <ion-item>
-      <ion-icon slot="start" name="settings-outline"></ion-icon>
-      Settings
-    </ion-item>
+  <ion-row>
+      <ion-item lines="none">
+        <ion-icon slot="start" name="person-circle-outline"></ion-icon>
+        Full Name
+      </ion-item>
+      <ion-item lines="none">
+        <ion-icon slot="start" name="search-circle-outline"></ion-icon>
+        @username_
+      </ion-item>
+      <ion-item lines="none">
+        <ion-icon slot="start" name="mail-outline"></ion-icon>
+        email@email.com
+      </ion-item>
+      <ion-item detail button lines="none">
+        <ion-icon slot="start" name="settings-outline"></ion-icon>
+        Settings
+      </ion-item>
   </ion-row>
+</ion-card>
   <hr>
   <ion-row>
     <h2>Liked Restaurants</h2>
