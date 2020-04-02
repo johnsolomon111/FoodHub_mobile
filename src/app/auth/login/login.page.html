@@ -12,7 +12,7 @@
   <ion-row>
     <ion-col class="ion-margin-horizontal">
       <ion-card>
-        <ion-card-header>
+        <ion-card-header color="tertiary">
           <ion-card-title>
             Log in Form
           </ion-card-title>
@@ -26,9 +26,11 @@
           <ion-label position="floating">Password</ion-label>
           <ion-input type="password"></ion-input>
         </ion-item>
-          <ion-button color="tertiary" [routerLink]="['/signup']">
+          <ion-button color="primary" [routerLink]="['/tabs/tabs/tab2']">
             Log in
           </ion-button>
+          <hr>
+          <ion-label>Doesn't have a acount? </ion-label><ion-label color="tertiary" [routerLink]="['/signup']">Sign up!</ion-label>
       </ion-card-content>
       </ion-card>
     </ion-col>
