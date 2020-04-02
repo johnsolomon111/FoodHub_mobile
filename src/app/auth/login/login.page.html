@@ -1,9 +1,36 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>login</ion-title>
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>
+      FoodHub
+    </ion-title>
   </ion-toolbar>
 </ion-header>
-
 <ion-content>
+  <ion-row class="ion-margin-top">
 
+  </ion-row>
+  <ion-row>
+    <ion-col class="ion-margin-horizontal">
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>
+            Log in Form
+          </ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+        <ion-item lines="none">
+          <ion-label position="floating">Username</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+        <ion-item lines="none" >
+          <ion-label position="floating">Password</ion-label>
+          <ion-input type="password"></ion-input>
+        </ion-item>
+          <ion-button color="tertiary" [routerLink]="['/signup']">
+            Log in
+          </ion-button>
+      </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
 </ion-content>
