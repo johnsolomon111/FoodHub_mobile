@@ -1,0 +1,61 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="tabs/tabs/tab1"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      Settings
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card class="ion-padding-bottom">
+    <ion-row>
+      <ion-img src="https://servoy.com/wp-content/uploads/github-300x300.png"
+      ></ion-img>
+    </ion-row>
+    <ion-row>
+        <ion-item lines="none">
+          <ion-icon slot="start" name="person-circle-outline"></ion-icon>
+          <ion-label position="floating">Full Name</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+        <ion-item lines="none">
+          <ion-icon slot="start" name="search-circle-outline"></ion-icon>
+          <ion-label position="floating">@username_</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+        <ion-item lines="none">
+          <ion-icon slot="start" name="mail-outline"></ion-icon>
+          <ion-label position="floating">email@email.com</ion-label>
+          <ion-input type="email"></ion-input>
+        </ion-item>
+    </ion-row>
+    <ion-button [routerLink]="['/tabs/tabs/tab1']" class="ion-margin-horizontal" color="tertiary">
+      Save Changes
+    </ion-button>
+  </ion-card>
+  <ion-card>
+    <ion-card-header color="primary">
+      <ion-card-title>
+        Change Password
+      </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="floating">Old Password</ion-label>
+        <ion-input type="password"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">New Password</ion-label>
+        <ion-input type="password"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Re-type New Password</ion-label>
+        <ion-input type="password"></ion-input>
+      </ion-item>
+      <ion-button color="tertiary" [routerLink]="['/tabs/tabs/tab1']">Save</ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
