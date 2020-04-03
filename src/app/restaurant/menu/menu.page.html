@@ -1,9 +1,119 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>Menu</ion-title>
+<ion-header [translucent]="true">
+  <ion-toolbar color="tertiary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="tabs/tabs/tab2"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      Menu
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <ion-row>
+    <ion-card id="category-card" color="primary">
+      <ion-card-header>
+        <ion-card-title>
+          Appetizers
+        </ion-card-title>
+      </ion-card-header>
+            <ion-card color="tertiary">
+              <ion-img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Fries_2.jpg/250px-Fries_2.jpg"></ion-img>
+              <ion-card-header>
+                <ion-card-title>
+                  French Fries
+                </ion-card-title>
+                <ion-label>
+                  <ion-chip color="primary">
+                    Php 45.00
+                  </ion-chip>
+                </ion-label>
+              </ion-card-header>
+            </ion-card>
+            <ion-card color="tertiary">
+              <ion-img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Fries_2.jpg/250px-Fries_2.jpg"></ion-img>
+              <ion-card-header>
+                <ion-card-title>
+                  French Fries V2
+                </ion-card-title>
+                <ion-label>
+                  <ion-chip color="primary">
+                    Php 55.00
+                  </ion-chip>
+                </ion-label>
+              </ion-card-header>
+            </ion-card>
+    </ion-card>
+  </ion-row>
+  <ion-row>
+    <ion-card id="category-card" color="primary">
+      <ion-card-header>
+        <ion-card-title>
+          Main Dishes
+        </ion-card-title>
+      </ion-card-header>
+            <ion-card color="tertiary">
+              <ion-img src="https://i2.wp.com/www.foodrepublic.com/wp-content/uploads/2012/05/testkitchen_argentinesteak.jpg?resize=480%2C%20270&ssl=1"></ion-img>
+              <ion-card-header>
+                <ion-card-title>
+                  Steak
+                </ion-card-title>
+                <ion-label>
+                  <ion-chip color="primary">
+                    Php 150.00
+                  </ion-chip>
+                </ion-label>
+              </ion-card-header>
+            </ion-card>
+            <ion-card color="tertiary">
+              <ion-img src="https://www.mygourmetconnection.com/wp-content/uploads/baby-back-ribs-whiskey-bbq-sauce-plated-680x454.jpg"></ion-img>
+              <ion-card-header>
+                <ion-card-title>
+                  Babyback Ribs
+                </ion-card-title>
+                <ion-label>
+                  <ion-chip color="primary">
+                    Php 145.00
+                  </ion-chip>
+                </ion-label>
+              </ion-card-header>
+            </ion-card>
+    </ion-card>
+  </ion-row>
+  <ion-row>
+    <ion-card id="category-card" color="primary">
+      <ion-card-header>
+        <ion-card-title>
+          Desserts
+        </ion-card-title>
+      </ion-card-header>
+            <ion-card color="tertiary">
+              <ion-img src="https://cleobuttera.com/wp-content/uploads/2019/06/kk-ice-cream-full-mood-720x405.jpg"></ion-img>
+              <ion-card-header>
+                <ion-card-title>
+                  Kitkat Ice Cream
+                </ion-card-title>
+                <ion-label>
+                  <ion-chip color="primary">
+                    Php 99.00
+                  </ion-chip>
+                </ion-label>
+              </ion-card-header>
+            </ion-card>
+            <ion-card color="tertiary">
+              <ion-img src="https://www.thespruceeats.com/thmb/XbMQ3CIuJvKd1TRYnW932iIcXXE=/1500x999/filters:fill(auto,1)/easy-chocolate-ice-cream-recipe-1945798-6_preview-5b16c882ff1b780036a4e1a2.jpeg"></ion-img>
+              <ion-card-header>
+                <ion-card-title>
+                  Chocolate Ice Cream
+                </ion-card-title>
+                <ion-label>
+                  <ion-chip color="primary">
+                    Php 79.00
+                  </ion-chip>
+                </ion-label>
+              </ion-card-header>
+            </ion-card>
+    </ion-card>
+  </ion-row>
 
 </ion-content>
