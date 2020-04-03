@@ -58,4 +58,29 @@
       <ion-button color="tertiary" [routerLink]="['/tabs/tabs/tab1']">Save</ion-button>
     </ion-card-content>
   </ion-card>
+
+  <ion-card>
+    <ion-card-header color="primary">
+      <ion-card-title>
+        Account
+      </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-row class="ion-margin-top">
+        <ion-item lines="none">
+          <ion-icon slot="start" name="cloud-offline-outline"></ion-icon>
+            Privacy  
+            <ion-toggle slot="end" color="tertiary" (click)="privacyAlert()"></ion-toggle>
+        </ion-item>
+        <ion-item detail button lines="none" (click)="logoutAlert()">
+          <ion-icon slot="start" name="log-out-outline"></ion-icon>
+          Log out
+        </ion-item>
+        <ion-item detail button lines="none" (click)="deactivateAlert()">
+          <ion-icon slot="start" name="cloud-offline-outline"></ion-icon>
+          Deactivate
+        </ion-item>
+      </ion-row>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
