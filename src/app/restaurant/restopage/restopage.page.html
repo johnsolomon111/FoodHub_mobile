@@ -1,9 +1,85 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>Resto Page</ion-title>
+  <ion-toolbar color="tertiary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="tabs/tabs/tab2"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      Resto Name
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+<img src="https://cdn.cnn.com/cnnnext/dam/assets/190625170055-mirazur-dining-room-night-nicolas-lobbestael.jpg">
+<ion-row class="ion-margin-horizontal">
+  <ion-item lines="none">
+    <ion-text lines="none">
+      <h1>Restaurant Name</h1>
+    </ion-text>
+  </ion-item>
+  <ion-item lines="none">
+    <ion-text class="ion-margin-horizontal ion-text-justify">
+      <p><strong>Description: </strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus rerum vero adipisci architecto, provident minima at excepturi modi!</p>
+    </ion-text>
+  </ion-item>
+  <ion-item id="email" lines="none">
+    <strong>Email: &nbsp;</strong> email@email.com
+  </ion-item>
+  <ion-item lines="none">
+    <strong>Contact Number: &nbsp;</strong> 09345789515
+  </ion-item>
+  <ion-item lines="none">
+    <ion-text>
+      <strong>Location: </strong><p class="ion-margin-horizontal">Location, location,location, location 1234</p>
+    </ion-text>
+  </ion-item>
 
+</ion-row>
+<ion-row>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>
+        Working Hours
+      </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+            Monday
+        <ion-label slot="end">
+          (8:00AM-6:00PM)
+        </ion-label>
+      </ion-item>
+      <ion-item>
+        Tuesday
+        <ion-label slot="end">
+          (8:00AM-6:00PM)
+        </ion-label>
+      </ion-item>
+      <ion-item>
+        Wednesday
+        <ion-label slot="end">
+          (8:00AM-6:00PM)
+        </ion-label>
+      </ion-item>
+      <ion-item>
+        Thursday
+        <ion-label slot="end">
+          (8:00AM-6:00PM)
+        </ion-label>
+      </ion-item>
+      <ion-item>
+        Friday
+        <ion-label slot="end">
+          (8:00AM-6:00PM)
+        </ion-label>
+      </ion-item>
+      <ion-item>
+        Saturday
+        <ion-label slot="end">
+          (8:00AM-1:00PM)
+        </ion-label>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+</ion-row>
 </ion-content>
