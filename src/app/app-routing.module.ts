@@ -25,14 +25,6 @@ const routes: Routes = [
   {
     path: 'restotabs',
     loadChildren: () => import('./restaurant/restotabs/restotabs.module').then( m => m.RestotabsPageModule)
-  },
-  {
-    path: 'restopage',
-    loadChildren: () => import('./restaurant/restopage/restopage.module').then( m => m.RestopagePageModule)
-  },
-  {
-    path: 'menu',
-    loadChildren: () => import('./restaurant/menu/menu.module').then( m => m.MenuPageModule)
   }
 ];
 @NgModule({
